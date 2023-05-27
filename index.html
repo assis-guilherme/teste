@@ -7,28 +7,38 @@
   <title>Document</title>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    #container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #conteudo{
+      width: 400px;
+      max-width: 500px;
+    }
+  </style>
 </head>
 <body>
-  <div class="is-flex is-justify-content-center is-align-items-center" style="height: 100vh;">
-    <div style="width: 600px;">
-      <form class="box">
-        <div class="field">
-          <label class="label">Usuário</label>
-          <div class="control">
-            <input class="input" type="email" placeholder="Usuário">
-          </div>
+  <div id="container">
+    <form id="conteudo" class="box">
+      <div class="field">
+        <label class="label">Usuário</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="Usuário">
         </div>
+      </div>
     
-        <div class="field">
-          <label class="label">Senha</label>
-          <div class="control">
-            <input class="input" type="password" placeholder="********">
-          </div>
+      <div class="field">
+        <label class="label">Senha</label>
+        <div class="control">
+          <input class="input" type="password" placeholder="********">
         </div>
+      </div>
     
-        <button type="submit" class="button is-success">Entrar</button>
+      <button type="submit" class="button is-success">Entrar</button>
     </form>
   </div>
-</div>
 </body>
 </html>
